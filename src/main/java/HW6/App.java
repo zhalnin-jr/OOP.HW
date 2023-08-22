@@ -8,7 +8,9 @@ public class App {
         System.out.println("Введите заказ:");
         Order order = createOrderFromConsole();
         order.saveToJson();
+        Order order1 = new Order("", "", 0, 0);
     }
+
 
     public static Order createOrderFromConsole() {
         String clientName = prompt("Client name: ");
